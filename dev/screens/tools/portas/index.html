@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portas Lógicas</title>
+    <link rel="stylesheet" type="text/css" href="/styles/globalStyles.css">
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <script type="module" src="/components/navegador.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <header>
+        <nav-bar></nav-bar>
+    </header>
+     
+    <!-- <h1> Portas Lógicas </h1> -->
+    <div class="main">
+        <select id="portaSelect" onchange="handleSelectChange()">
+            <option value="AND" selected="selected"> AND </option>
+            <option value="OR"> OR </option>
+            <option value="NAND"> NAND </option>
+            <option value="NOR"> NOR </option>
+            <option value="XOR"> XOR </option>
+        </select>
+        <h2 id="notation" style="margin-top: 10px;">A <span id="operatorNotation">&#8226;</span> B</h3>
+        <div id="main">
+            <div id="portaContainer">
+                <img src="./imagens/PortaAND.png" id="porta">
+                    <button id="entrada1" value="0" class="entradaOff" onclick="handleInput(this)">0</button>
+                    <button id="entrada2" value="0" class="entradaOff" onclick="handleInput(this)">0</button>
+                    <button id="saida" value="0" class="entradaOff" disabled>0</button>
+            </div>
+        </div>
+        <table id="tabela">
+            <tr id="header">
+                <th>Ent 1</th>
+                <th>Ent 2</th>
+                <th>Saída</th>
+            </tr>
+            <tr id="linha1" class="selectedRow">
+                <td>0</td>
+                <td>0</td>
+                <td id="saida00">0</td>
+            </tr>
+            <tr id="linha2">
+                <td>0</td>
+                <td>1</td>
+                <td id="saida01">0</td>
+            </tr>
+            <tr id="linha3">
+                <td>1</td>
+                <td>0</td>
+                <td id="saida10">0</td>
+            </tr>
+            <tr id="linha4">
+                <td>1</td>
+                <td>1</td>
+                <td id="saida11">1</td>
+            </tr>
+        </table>
+        
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

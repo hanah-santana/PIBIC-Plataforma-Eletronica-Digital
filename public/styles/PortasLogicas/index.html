@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Portas Lógicas</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script type="module" src="/components/navegador.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css"> 
+    <link rel="stylesheet" type="text/css" href="/styles/container1.css"> 
+    <link rel="stylesheet" type="text/css" href="/styles/container2.css"> 
+    <link rel="stylesheet" type="text/css" href="/styles/container3.css"> 
+    <link rel="stylesheet" type="text/css" href="/styles/container_video.css">
+    <link rel="stylesheet" type="text/css" href="/styles/globalStyles.css">
+</head>
+<body>   
+    <header><nav-bar class="menu"></nav-bar></header>
+    <div id="container">
+        <div id="box-1" class="box">
+            <div id="vertical"></div>
+            <h4 style="margin-left: 15px; margin-top: 10px;">Nesta Página:</h4>
+            <ul>
+            <li>
+                <a href="#portas">- Portas Lógicas</a>
+                <ul>
+                    <li><a href="#NOT">1. Porta NOT</a></li>
+                    <li><a href="#OR">2. Porta OR</a></li>
+                    <li><a href="#AND">3. Porta AND</a></li>
+                    <li><a href="#NOR">4. Porta NOR</a></li>
+                    <li><a href="#NAND">5. Porta NAND</a></li>
+                    <li><a href="#XOR">6. Porta XOR</a></li>
+                    <li><a href="#XAND">7. Porta XAND</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        <div id="box-2" class="box">
+            <div id="text">
+                <h1>Portas Lógicas</h1>
+                <p>
+                    <span style="padding-left:3em"></span>As portas lógicas são dispositivos trabalham com um 
+                    ou mais sinais de entrada para produzir uma saída, sempre trabalhando com a álgebra de 
+                    Boole. Estas são componentes essenciais em circuitos digitais (ou circuitos lógicos), que 
+                    empregam a utilização de sinais elétricos em apenas dois níveis de corrente para definir a 
+                    representação desses valores binários (0/1, high/low, 0V/5V etc). Sendo assim, é interessante 
+                    efetuar o estudo de portas lógicas, representações e suas respectivas funções.
+                </p>
+                    Nas funções lógicas, temos apenas dois estados distintos:</br>
+                    O estado 0 representa, por exemplo: Desligado, ausência de tensão, não, chave aberta e afins.</br>
+                    O estado 1 por sua vez, representa: Ligado, presença de tensão, sim, chave fechada etc.
+                </p>
+                <a id="portas"></a>
+                <hr>
+                <div> 
+                    <h1 id="NOT">Portas Lógicas</h1></br>
+                    <h4>1. Porta Inversora (NÃO/NOT)</h4>
+                    </br>
+                    <img src="/assets/images/portaNOT.PNG" alt="Representação da porta NOT">
+                    <p><span style="padding-left: 3em;">
+                        Na lógica da porta NOT, o nível de saída é invertido em relação a entrada, ou seja, se a variável 
+                        estiver em 0, a saída vai para 1 e se estiver em 1, a saída vai para 0. Algebricamente é 
+                        representada por S = A' ou S = <barra>A</barra> (lê-se "A barra" ou "Não A", onde a barra 
+                        ou apóstrofo representa uma inversão ou negação). Assim como ilustra 
+                        a tabela verdade abaixo.
+                    </p>
+                    <img src="/assets/images/tabvNOT.PNG" alt="Tabela verdade porta NOT">
+                    <p>O circuito abaixo representa como seria o funcionamento da função NOT para facilitar o entendimento.</p>
+                    <img src="/assets/images/circuitoNOT.PNG">
+                    <p>Considera-se que:</br>1. A chave "A" representa a entrada da porta lógica.</br>
+                        <span style="padding-left: 3em;">Chave fechada, nível lógico "1".</br>
+                        <span style="padding-left: 3em;">Chave aberta, nível lógico "0".</br>
+                        2. A lâmpada representa "S", a saída da porta lógica.</br>
+                        <span style="padding-left: 3em;">Lâmpada acesa, nível lógico "1".</br> 
+                        <span style="padding-left: 3em;">Lâmpada apagada, nível lógico "0".
+                    </p>
+                    <p>A lógica NOT também pode ser representada pelo seguinte bloco:</p>
+                    <img id="OR" src="/assets/images/blocoNOT.PNG">
+                    </br>
+                    <h4>2. Porta OR/OU</h4>
+                    </br>
+                    <img src="/assets/images/portaOR.PNG" alt="Representação da porta OR">
+                    <p><span style="padding-left: 3em;">
+                        Na lógica da porta OR (OU), o nível de saída é 1 quando uma ou mais entradas forem iguais a 1 (A ou B; 
+                        A e B). E assume valor 0 se, e somente se, todas as entradas possuírem valor igual a 0. Algebricamente é
+                        representada por S = A + B (lê-se S = A <b>ou</b> B). Vejamos sua representação na tabela verdade abaixo.
+                    </p>
+                    <img src="/assets/images/tabvOR.PNG" alt="Tabela verdade porta OR">
+                    <p>O circuito abaixo ilustra a lógica OU.</p>
+                    <img src="/assets/images/circuitoOR.PNG">
+                    <p>A lógica OU também pode ser representada pelo seguinte bloco:</p>
+                    <img src="/assets/images/blocoOR.PNG" id="AND">
+                    </br>
+                    <h4>3. Porta AND/E</h4>
+                    </br>
+                    <img src="/assets/images/portaAND.PNG" alt="Representação da porta AND">
+                    <p><span style="padding-left: 3em;">
+                        Na lógica da porta AND (E), é executada a multiplicação das variáveis de entrada, sendo assim 
+                        o nível de saída é 1 se, e somente se, todas as entradas possuírem valor 1.
+                        E assume valor 0 quando qualquer uma das portas possuir valor 0. Algebricamente é
+                        representada por S = A . B (lê-se S = A <b>e</b> B). Vejamos sua representação na tabela verdade 
+                        abaixo.
+                    </p>
+                    <img src="/assets/images/tabvAND.PNG" alt="Tabela verdade porta AND">
+                    <p>O circuito abaixo ilustra a lógica AND.</p>
+                    <img src="/assets/images/circuitoAND.PNG">
+                    <p>A lógica AND também pode ser representada pelo seguinte bloco:</p>
+                    <img src="/assets/images/blocoAND.PNG" id="NOR">
+                    </br>
+                    <h4>4. Porta NOR/NOU/NÃO OU</h4>
+                    </br>
+                    <img src="/assets/images/portaNOR.PNG" alt="Representação da porta NOR">
+                    <p>A porta lógica desta função pode ser também representada por uma porta OU com um 
+                    inversor ligado a sua saída, como mostrado abaixo.</p>
+                    <img src="/assets/images/portaNOR2.PNG">
+                    <p><span style="padding-left: 3em;">
+                        A lógica da porta NOR (NOU) é a composição da função NOT com a função OR. Algebricamente é 
+                        representada por: S = (<barra>A + B</barra>), onde o traço indica a inversão da 
+                        soma booleana A + B. Vejamos sua representação na tabela verdade abaixo.
+                    </p>
+                    <img src="/assets/images/tabvNOR.PNG" alt="Tabela verdade porta NOR">
+                    <p>A lógica NOR também pode ser representada pelo seguinte bloco:</p>
+                    <img src="/assets/images/blocoNOR.PNG" id="NAND">
+                    </br>
+                    <h4>5. Porta NAND/NE/NÃO E</h4>
+                    </br>
+                    <img src="/assets/images/portaNAND.PNG" alt="Representação da porta NAND">
+                    <p>A porta lógica desta função pode ser também representada por uma porta E com um 
+                    inversor ligado a sua saída, como mostrado abaixo.</p>
+                    <img src="/assets/images/portaNAND2.PNG">
+                    <p><span style="padding-left: 3em;">
+                        A lógica da porta NAND (NE) é a composição da função NOT com a função AND, ou seja, teremos 
+                        uma função E invertida. Algebricamente é representada por: S = (<barra>A . B</barra>),
+                        onde o traço indica a inversão do produto A.B. Vejamos sua 
+                        representação na tabela verdade abaixo.
+                    </p>
+                    <img src="/assets/images/tabvNAND.PNG" alt="Tabela verdade porta NAND">
+                    <p>A lógica NAND também pode ser representada pelo seguinte bloco:</p>
+                    <img src="/assets/images/blocoNAND.PNG" id="XOR">
+                    </br>
+                    <h4>6. Circuito OU Exclusivo (XOR)</h4>
+                    </br>
+                    <img src="/assets/images/portaXOR.PNG">
+                    <p><span style="padding-left: 2em;">Na lógica da porta OU Exclusivo ou Exclusive OR, o valor lógico da saída será 1 somente se A ou B estiver 
+                    com valor 1, caso ambas estejam com valor 1 a saída será 0, podemos ver na tabela verdade
+                    abaixo. Sua representação algébrica é dada por S = <barra>A</barra>.B + A<barra>.B</barra>
+                     = A ⊕ B. 
+                    </p>
+                    <img src="/assets/images/tabvXOR.PNG">
+                    <p>A lógica XOR também pode ser representa pelo seguinte bloco:</p>
+                    <img src="/assets/images/blocoXOR.PNG"  id="XAND">
+                    </br>
+                    <h4>7. Circuito Coincidência (XAND)</h4>
+                    </br>
+                    <img src="/assets/images/portaXAND.PNG">
+                    <p><span style="padding-left: 2em;">Na lógica da porta do Circuito Coincidência ou XAND, o valor 
+                    lógico da saída será 1 somente se A e B possuirem valores iguais, que coincidam, tanto com 
+                    com valor 1, quanto com valor 0. Representando algebricamente temos S = <barra>A</barra>.
+                    <barra>B</barra> + A.B = A ⊙ B.
+                    </p>
+                    <img src="/assets/images/tabvXAND.PNG">
+                    <p>A lógica XAND também pode ser representa pelo seguinte bloco:</p>
+                    <img src="/assets/images/blocoXAND.PNG">
+                    </br>
+                </div>
+            </div>
+        </div>
+        <div id="box-3" class="box">
+            <div id="titulo"><h2>Vídeos Recomendados</h2></div>
+            <div id="videos">
+                <a href="https://www.youtube.com/watch?v=xr7CglsoNqY" target="_blank">
+                    <div class="thumb-box">
+                        <div class="tholder"><div class="thumbnail"><img src="https://img.youtube.com/vi/xr7CglsoNqY/0.jpg"></div></div>
+                        <h3>Arquitetura de Computadores: Porta Lógica AND</h3>
+                        <h4>Professor Pantoja</h4>
+                    </div>
+                </a>
+                <hr>
+                <a href="https://www.youtube.com/watch?v=oA90A_OkJCI" target="_blank">
+                    <div class="thumb-box">
+                        <div class="tholder"><div class="thumbnail"><img src="https://img.youtube.com/vi/oA90A_OkJCI/0.jpg"></div></div>
+                        <h3>Arquitetura de Computadores: Porta Lógica OR</h3>
+                        <h4>Professor Pantoja</h4>
+                    </div>
+                </a>
+                <hr>
+                <a href="https://www.youtube.com/watch?v=oToBDjl7oao" target="_blank">
+                    <div class="thumb-box">
+                        <div class="tholder"><div class="thumbnail"><img src="https://img.youtube.com/vi/oToBDjl7oao/0.jpg"></div></div>
+                        <h3>Arquitetura de Computadores: Porta Lógica XOR</h3>
+                        <h4>Professor Pantoja</h4>
+                    </div>
+                </a>
+                <hr>
+                <a href="https://www.youtube.com/watch?v=u8fObLCobUQ" target="_blank">
+                    <div class="thumb-box">
+                        <div class="tholder"><div class="thumbnail"><img src="https://img.youtube.com/vi/u8fObLCobUQ/0.jpg"></div></div>
+                        <h3>Arquitetura de Computadores: Portas Lógicas NOT e NAND</h3>
+                        <h4>Professor Pantoja</h4>
+                    </div>
+                </a>
+                <hr>
+                <a href="https://www.youtube.com/watch?v=s5SMVliReYE" target="_blank">
+                    <div class="thumb-box">
+                        <div class="tholder"><div class="thumbnail"><img src="https://img.youtube.com/vi/s5SMVliReYE/0.jpg"></div></div>
+                        <h3>Arquitetura de Computadores: Porta Lógica NOR</h3>
+                        <h4>Professor Pantoja</h4>
+                    </div>
+                </a>
+                <hr>
+                <a href="https://www.youtube.com/watch?v=2d2l02g_ZZQ" target="_blank">
+                    <div class="thumb-box">
+                        <div class="tholder"><div class="thumbnail"><img src="https://img.youtube.com/vi/2d2l02g_ZZQ/0.jpg"></div></div>
+                        <h3>Arquitetura de Computadores: Porta Lógica Coincidência</h3>
+                        <h4>Professor Pantoja</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="myBar" class="progress-bar"></div>
+</body>
+<script type="text/javascript" src="/Inicio/script.js"></script>
+</html>

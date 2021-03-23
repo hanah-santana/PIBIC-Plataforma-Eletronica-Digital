@@ -1,0 +1,23 @@
+#photo-txt{
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+    height: fit-content;
+    display: inline-block;
+    position: relative;
+}
+#photo-txt h1{
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-size: 38px;
+    line-height: 1em;
+}
+.display{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: inline-block;
+}

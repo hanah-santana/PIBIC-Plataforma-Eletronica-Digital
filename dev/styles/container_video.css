@@ -1,0 +1,71 @@
+#titulo{
+    margin-top:16px;
+    margin-left: 16px;
+    height: fit-content;
+}
+#videos{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+.thumb-box{
+    padding-bottom: 8px;
+    margin-top: 16px;
+}
+.thumb-box:hover{
+    background-color: #ececec;
+}
+.tholder{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+}
+.thumbnail{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    width: 80%;
+    height: 100%;
+    background-color: black;
+}
+.thumb-box h2{
+    font-size: 22px;
+    margin-top:8px;
+    margin-bottom: 8px;
+}
+.thumb-box h3{
+    font-size: 16px;
+    margin-top:8px;
+    margin-bottom: 8px;
+}
+.ytbutton{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto ;
+    position: absolute;
+    background-color: red;
+    width: 20%;
+    height: fit-content;
+}
+/*REDIMENSIONAMENTO MOBILE*/
+@media(max-width:850px){
+    #videos{     
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .thumb-box{
+        width: 160px;
+        height: fit-content;
+        margin: 16px;
+        margin-left: 0;
+        float: left;
+    }
+    hr{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+}

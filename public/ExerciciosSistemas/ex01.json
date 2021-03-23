@@ -1,0 +1,19 @@
+[
+    {
+        "title": "(ABIN-2004) julgue o item a seguir, 
+        relativo à conversão entre sistemas de numeração, 
+        considerando que o sistema de numeração é indicado 
+        em subscrito. FD (HEXADECIMAL) = 253 (DECIMAL)",
+        "type": "default",
+        "items": ["1", "2", "3", "4", "5"]
+    },
+    {
+        "title": "(ABIN-2004) julgue o item a seguir,'
+         relativo à conversão entre sistemas de numeração,
+         considerando que o sistema de numeração é indicado em subscrito.
+        FD (HEXADECIMAL) = 253 (DECIMAL),",
+        "type": "default",
+        "items": ["1", "2", "3", "4", "5"]
+    },
+    
+]

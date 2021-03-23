@@ -1,0 +1,120 @@
+body {
+  text-align: center;
+}
+
+.main {
+    justify-content: center;
+    padding: -10px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+p {
+  text-align: center;
+  margin: 15px;
+}
+
+.items p {
+  text-align: center;
+  margin: 0px;
+}
+
+.pDiv {
+  margin: 7px;
+}
+
+.secondText {
+  white-space: nowrap;
+  margin-bottom: 7px;
+}
+
+.boxed {
+  flex: 1;
+  width: 102%;
+  align-self: center;
+  padding: 10px;
+  transition: 300ms;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.boxedCerto {
+  background-color: rgb(224, 255, 175);
+}
+
+.boxedErrado {
+  background-color: rgb(236, 182, 182);
+}
+
+.boxedFalta {
+  background-color: rgb(206, 206, 206);
+}
+
+.divInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subjLabel, .inputSubj {
+}
+
+.inputSubj {
+}
+
+.subjLabel {
+}
+
+.itemLabel {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border: solid 2px #ccc;
+    transition: all 0.3s;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  
+input[type="radio"] {
+    display: none;
+  }
+  
+input[type="radio"]:checked + .itemLabel {
+    border: solid 2px #039487;
+  }
+
+.items{
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.item {
+  display: inline-block;
+  width: 100px;
+  word-break:break-all;
+  vertical-align: top;
+}
+
+.itemDestacadoCerto {
+  background-color: rgb(224, 255, 175);
+  border-color: white;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.item p {
+
+}
+
+@media(max-width:850px) {
+  .main {
+    width: 100%;
+  }
+}

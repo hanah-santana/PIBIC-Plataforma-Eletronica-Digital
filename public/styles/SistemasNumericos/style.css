@@ -1,0 +1,6 @@
+.equation, .topic{
+    margin-left: 32px;
+}
+input[type="number"] {
+    width: 100px;
+}

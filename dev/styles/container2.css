@@ -1,0 +1,25 @@
+#box-2{
+    margin-left: 32px;
+    margin-bottom: 16px;
+    width: 57%;
+    height: fit-content;
+    background-color: white;
+}
+#text{
+    margin: 32px;
+}
+barra{
+    text-decoration: overline;
+}
+        /*REDIMENSIONAMENTO-MOBILE*/
+@media(max-width:850px){ 
+    #box-2{
+        width:100%;
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    #box-2 h1{
+        font-size: 28px;
+        bottom:8px;
+    }
+}

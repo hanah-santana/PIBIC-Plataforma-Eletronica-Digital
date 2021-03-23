@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Multibases</title>
+    <link rel="stylesheet" type="text/css" href="/styles/globalStyles.css">
+    <link rel="stylesheet" type="text/css" href="/screens/tools/calculadora/style.css">
+    <script type="module" src="/components/navegador.js"></script>
+    <script src="/scripts/globalFunctions.js"></script>
+    <script src="/screens/tools/calculadora/script.js"></script>
+</head>
+
+<body onload="handleOnLoad()">
+    <div class="popUpBackground" name="pop" style="display: none;">
+        <div class="popUpBox" name="pop" >
+            <input type="button" class="fechar" id="fechar" onclick="toggleHelp('none')" value ="x"/>
+            <p id="popUpText"> </p>
+        </div>
+    </div>
+    <header>
+        <nav-bar></nav-bar>
+    </header>
+    <div class="main">
+    <input type="button" class="help" id='help' onclick="toggleHelp('block', 'Some, Subtraia ou Multiplique valores, podendo escolher as bases dos valores de entrada e a base do resultado. Apenas são permitidas bases maiores que 1 e menores que 37.')" value ="Como funciona?"/>
+        <div>
+            <p id="alert1" class="alert"></p>
+            <p id="alert2" class="alert"></p>
+        </div>
+        <div id="inputs">
+            <div class="numEBase">
+                <div class="labelEInput">
+                    <label for="input1">Número:<label\>
+                    <input type="text" class="input" id="input1"
+                    oninput="handleChange(this)" maxlength="12">
+                </div>
+                <div class="labelEInput">
+                    <label for="base1">Base:<label\>
+                    <input type="number" class="inputBase" id="base1"
+                    oninput="handleChange(this)"
+                    placeholder="10">
+                </div>
+            </div>
+            <select id="operacao" onchange="handleChange(this)">
+                <option value="+"> + </option>
+                <option value="-"> − </option>
+                <option value="x"> × </option>
+            </select>
+            <div class="numEBase">
+                <div class="labelEInput">
+                    <label for="input2">Número:<label\>
+                    <input type="text" class="input" id="input2"
+                    oninput="handleChange(this)" maxlength="12">
+                </div>
+                <div class="labelEInput">
+                    <label for="base2">Base:<label\>
+                    <input type="number" class="inputBase" id="base2"
+                    oninput="handleChange(this)"
+                    placeholder="10">
+                </div>
+            </div>
+            <h2>=</h2>
+            <div class="numEBase">
+                <div class="labelEInput">
+                    <label for="res">Resultado:<label\>
+                    <input type="text" class="input" id="res"
+                    readonly="readonly">
+                </div>
+                <div class="labelEInput">
+                    <label for="baseRes">Base:<label\>
+                    <input type="number" class="inputBase" id="baseRes"
+                    oninput="handleChange(this)"
+                    placeholder="10">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

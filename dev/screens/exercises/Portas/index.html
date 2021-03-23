@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios - Portas Lógicas</title>
+    <link rel="stylesheet" type="text/css" href="/styles/globalStyles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script type="module" src="/components/navegador.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="generateQuestions()">
+    <div class="popUpBackground" name="pop" style="display: none;">
+        <div class="popUpBox" name="pop" >
+            <input type="button" class="fechar" id="fechar" onclick="toggleHelp('none')" value ="x"/>
+            <p id="popUpText"> </p>
+        </div>
+    </div>
+    <header>
+        <nav-bar></nav-bar>
+    </header>
+    <div class="main">
+        <input type="button" class="help" id='help' onclick="toggleHelp('block', 'Responda as questões que achar que sabe! Só serão contabilizadas as que você respondeu. Ao terminar, aperte no botão CORRIGIR, no fim da página.')" value ="Como funciona?"/>
+    </div>
+</body>
+</html>

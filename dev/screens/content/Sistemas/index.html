@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Sistemas Numéricos</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script type="module" src="/components/navegador.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css"> 
+    <link rel="stylesheet" type="text/css" href="/styles/container1.css"> 
+    <link rel="stylesheet" type="text/css" href="/styles/container2.css"> 
+    <link rel="stylesheet" type="text/css" href="/styles/container3.css"> 
+    <link rel="stylesheet" type="text/css" href="/styles/container_video.css">
+    <link rel="stylesheet" type="text/css" href="/styles/globalStyles.css">
+</head>
+<body>   
+    <header><nav-bar class="menu"></nav-bar></header>
+    <div id="container">
+        <div id="box-1" class="box">
+            <div id="vertical"></div>
+            <h4 style="margin-left: 15px; margin-top: 10px;">Nesta Página:</h4>
+            <ul>
+            <li><a href="#sistemas">- Sistemas de Numeração</a></li>
+            <li><a href="#conversoes">- Conversões</a></li>
+            <li><a href="#operacoes">- Operações</a></li>
+            </ul>
+        </div>
+        <div id="box-2" class="box">
+            <div id="text">
+                <h1>Sistemas Numéricos</h1>
+                <p>
+                    <span style="padding-left:3em"></span>Sabe-se que, de maneira diferente do cotidiano, os processamentos 
+                    e aparelhos digitais utilizam sistemas binários, hexadecimais ou octais de numeração para obterem 
+                    um melhor desempenho. Desta maneira, não se limitam somente ao sistema decimal, como na primeira 
+                    geração de computadores que utilizavam válvulas termoiônicas. Para a melhor compreensão da lógica 
+                    computacional e de sistemas afins, será feito o estudo dos sistemas de numeração.
+                </p>
+                <h2>Tabela dos Números Inteiros</h2>
+                <p>
+                    A tabela mostra os números decimais de 0 ate 16 e seus respectivos 
+                    valores nos sistemas mais utilizados: Binário, Octal e Hexadecimal.    
+                    <img src="/assets/images/Tabela de contagem.png"><a id="sistemas"></a>
+                </p>
+                <hr>
+                <div>
+                    <h1>Sistemas de Numeração</h1><br/>
+                    <h2>Decimal</h2>
+                    <p><span style="padding-left:3em">O sistema decimal possui 10 dígitos (0-9) e é constituído pelas unidades, dezenas, centenas, milhares etc. Vejamos sua representação no exemplo a seguir:
+                    </p>
+                    <p class="equation">
+                        490<sub>10</sub> = 0x10<sup>0</sup> + 9x10<sup>1</sup> + 4x10<sup>2</sup> <br/>
+                        1294<sub>10</sub> = 4x10<sup>0</sup> + 9x10<sup>1</sup> + 2x10<sup>2</sup> + 1x10<sup>3</sup>
+                    </p>
+                    <h2>Binário</h2>
+                    <p><span style="padding-left:3em">É o sistema de numeração que possui 2 dígitos (0 e 1) e é largamente utilizado em sistemas lógicos que normalmente usam álgebra booleana, tais como sistemas computacionais e afins. Será representado de maneira que seja convertido para decimal a seguir:
+                    </p>
+                    <p class="equation">
+                        10<sub>2</sub> = 0x2<sup>0</sup> + 1x2<sup>1</sup> = 0 + 2 = 2<sub>10</sub> <br/>
+                        1011<sub>2</sub> = 1x2<sup>0</sup> + 1x2<sup>1</sup> + 0x2<sup>2</sup> + 1x2<sup>3</sup> = 1 + 2 + 0 + 8 = 11<sub>10</sub>
+                    </p>
+                    <h2>Hexadecimal</h2>
+                    <p><span style="padding-left:3em">Este sistema é representado por 16 dígitos (0-F). Desses 16 dígitos, 10 são conhecidos por fazerem parte do sistema decimal, acrescidos de 6 dígitos, que são A, B, C, D, E, F. Comparando ao sistema decimal, tem-se que A=10, B=11, C=12, D=13, E=14, F=15</p>
+                    <p class="equation">
+                        AB<sub>16</sub> = 11x16<sup>0</sup> + 10x16<sup>1</sup> = 11 + 160 = 171<sub>10</sub><br/>
+                        349<sub>16</sub> = 9x16<sup>0</sup> + 4x16<sup>1</sup> + 3x16<sup>2</sup> = 9 + 64 + 768 = 841<sub>10</sub><br/>
+                        DA3<sub>16</sub> = 3x16<sup>0</sup> + 10x16<sup>1</sup> + 13x16<sup>2</sup>= 3 + 160 + 3328 = 3491<sub>10</sub> <br/>
+                        1C<sub>16</sub> = 12x16<sup>0</sup> + 1x16<sup>1</sup> = 12 + 16 = 28<sub>10</sub>
+                    </p>
+                    <h2>Octal</h2>
+                    <p><span style="padding-left:3em">Este sistema já foi utilizado como uma alternativa mais compacta em relação ao sistema binário para programação em linguagem de máquina. Possui 8 dígitos compreendidos entre 0-7.
+                    </p>
+                    <p class="equation">
+                        72<sub>8</sub>= 2x8<sup>0</sup> + 7x8<sup>1</sup>  = 2 + 56 = 58<sub>10</sub><br/>
+                        453<sub>8</sub> = 3x8<sup>0</sup> + 5x8<sup>1</sup> + 4x8<sup>2</sup> = 3 + 40 + 256 = 299<sub>10</sub>
+                    </p>
+                    <h2>Outros Sistemas</h2>
+                    <p><span style="padding-left:3em">É importante saber que os sistemas numéricos não limitam-se apenas aos binários, hexadecimal e afins. Na realidade, pode-se utilizar qualquer base numérica e realizar operações, seja com 3, 4, 9, 12 ou qualquer outro número de dígitos. Estes não serão vistos aqui por não serem utilizados.</p>
+                    
+                    <h2>Exercício de Fixação</h2>
+                    <p>O número 10 está em decimal. Converta-o para BINÁRIO:</p>
+                    <input type="number" id="q1" class="contentQuestion">
+                    <input type="button" onclick="analyseQuestion(1)" value="Corrigir" class="contentButton">
+                    <p style="display: none;" id="textq1"></p>
+                    <p><a id="conversoes"></a><br/></p>
+                    
+                </div>
+                <hr>
+                <div>
+                    <h1>Conversões</h1>
+                    <p><span style="padding-left:3em">Ao iniciar os estudos na computação, torna-se comum lidar com números em diferentes sistemas numéricos, tais como Hexadecimal e Binário. Com isso, atribuir valores presentes em uma base a outra, ou seja, converter números em diferentes bases numéricas, mostra-se necessário.<!--<br/><i>Você pode utilizar as nossas <a href="#">ferramentas de conversão<a> para conferir os resultados das conversões e facilitar sua compreensão.</i>--></p>
+                    <h2>Conversão de Outras Bases Para Decimal:</h2>
+                    <p><span style="padding-left:3em">Como visto na seção anterior, que descreve cada sistema de numeração, é possível efetuar a conversão de qualquer base para a base 10 (decimal), utilizando-se do mesmo método. Vejamos um exemplo simples: </p>
+                    <p><b>Exemplo:</b> Digamos que você está tentando converter A3B<sub>16</sub> para decimal. Primeiro selecione o último dígito (B, que equivale à 11) e multiplique-o por 16<sup>0</sup>(estamos multiplicando por 16 porque a base do número A3B é a hexadecimal), some com o penúltimo dígito (3) multiplicado por 16<sup>1</sup> e, finalmente some com o antepenúltimo dígito (ou primeiro, A=10) multiplicado por 16<sup>2</sup>.</p>
+                    <p class="equation">Teremos: A3B<sub>16</sub> = 11x16<sup>0</sup>  + 3x16<sup>1</sup> + 10x16<sup>2</sup> = 2619<sub>10</sub> </p>
+                    <p><i>Existem vários outros exemplos deste tipo de conversão na parte de <a href="#sistemas"><b>Sistemas de Numeração</b></a>, onde estão as representações em decimal de todos os sistemas numéricos supracitados, logo acima nesta página.</i></p>
+                    <h2>Passo a Passo:</h2>
+                    <p>Temos então o método passo a passo para facilitar a memorização. Lembrando que este método serve para converter de todos os sistemas numéricos (binário (base 2), hexadecimal (base 16), octal (base 8)... etc) para decimal (base 10). Vejamos:</p>
+                    <p class="topic">1. Cada dígito do número a ser convertido para decimal, deve ser multiplicado pelo número correspondente a base na qual o número pertence. Por exemplo, se você está tentando converter da base hexadecimal para a decimal, multiplique cada dígito do número a ser convertido por 16. Se for da binária para decimal, multiplique cada dígito por 2. Se octal, por 8, e assim por diante.</p>
+                    <p class="topic">2. Iniciando pelo último dígito do número a ser convertido, multiplique pelo número da base (correspondente ao passo anterior) elevado a 0. O penúltimo multiplique pelo número da base elevado a 1, o antepenúltimo deve ser multiplicado pela base elevada a 2, depois por 3… e assim por diante.</p>
+                    <p class="topic">3. Depois faça a soma de todos os resultados das operações anteriores.</p>
+                    <p class="topic">4. Caso o sistema seja hexadecimal ou afins, utilizar os valores correspondentes aos dígitos, para que seja possível calcular (por exemplo: A=10, B=11...).</p>
+                    <p class="topic">Vale lembrar que existem vários exemplos na <a href="#sistemas">seção anterior</a>.</p>
+            
+                    <h2>Decimal Para Outras Bases:</h2>
+                    <p><span style="padding-left: 3em">O método de conversão mostrado a seguir serve para a conversão de números do Sistema Decimal para todas os outros sistemas de numeração. Vejamos alguns exemplos:</p>
+                
+                    <h2>Exemplo 1 (Decimal - Binário):</h2>
+                    <p class="topic">1. Convertendo um número inteiro do Sistema Decimal para o Sistema Binário, divida o número decimal por 2 (uma vez que será convertido para a base 2) deixando resto, que é sempre 0 ou 1. </p>
+                    <p class="topic">2. Feito isto, deve-se utilizar seu resultado e também dividi-lo por 2 deixando resto. Fazendo isso sucessivamente até que não seja mais possível efetuar divisões.</p>
+                    <p class="topic">3. Após as sucessivas divisões, devem ser utilizados os restos. Visto que, indo do último para o primeiro (incluindo o quociente da última divisão), eles já são o resultado da conversão. Desta maneira, temos que:</p>
+                    <img src="/assets/images/img_2_ex700.png" alt="700 dividido sucessivamente por 2" width="450px" height="250px" >
+                    <p class="topic">Portanto o resultado final é:</p>
+                    <p class="equation">700<sub>10</sub> = 1010111000<sub>2</sub></p>
+                    
+                    <h2>Exemplo 2 (Decimal - Hexadecimal):</h2>
+                    <p><span style="padding-left: 3em">Da mesma maneira que é feita a conversão de decimal para binário (sucessivas divisões utilizando o resto), é feita a conversão para o sistema Hexadecimal e para todos os outros sistemas. Dessa vez as divisões serão feitas dividindo por 16, uma vez que a base do número a ser convertido é 16. Vejamos mais um exemplo, agora convertendo do Sistema Decimal para o Hexadecimal:</p>
+                    <img src="/assets/images/img_2_ex500.png" alt="500 dividido sucessivamente por 16" width="200px" height="120px">
+                    <p class="equation">15=F</p>
+                    <p class="equation">500<sub>10</sub> = 1F4<sub>16</sub></p>
+                
+                    <h2>Outras Conversões</h2>
+                    <p>O processo de conversão de decimal para qualquer outra base tornou-se simples. O diferencial é o divisor que será utilizado. Nota-se que é correspondente ao sistema decimal para o qual o número será convertido.</p>
+                    <p>Caso seja necessário fazer uma conversão de Binário para Hexadecimal, por exemplo, você pode utilizar os métodos acima para converter Binário para Decimal, e logo depois, converter de Decimal para Hexadecimal.</p>
+                    <!--<p>Existem também outros tipos de conversões que podem ser feitas. Por exemplo: Hexadecimal para Binário, Binário para Octal, Hexadecimal para Octal e afins. Estas podem ser encontradas em <a href="#">extras</a>.</p>-->
+                    <h2>Exercício de Fixação</h2> 
+                    <p>Converta o número 73 de DECIMAL para HEXADECIMAL:</p>
+                    <input type="number" id="q2" class="contentQuestion">
+                    <input type="button" onclick="analyseQuestion(2)" value="Corrigir" class="contentButton">
+                    <p style="display: none;" id="textq2"></p>
+                    <p><a id="operacoes"></a><br/></p> 
+                </div>
+                <hr>
+                <div>
+                    <h1>Operações Aritméticas</h1>
+                    <p><span style="padding-left: 3em">Ao executar operações básicas de aritmética como Adição e Subtração, são utilizados métodos simples vistos desde o ensino fundamental. Estes métodos, mesmo que muitos não saibam, podem ser aplicadas à diferentes bases se adaptando, claro, aos algarismos disponíveis dependendo do sistema numérico em questão. Vejamos:</p>
+                    <h2>Soma:</h2>
+                    <p><span style="padding-left: 3em">Ao executar uma soma no sistema decimal, com os números 28 e 4 por exemplo, prossegue-se da seguinte maneira:<!--<br/> <i>Em caso de dúvida, você pode utilizar nossa ferramenta <a href="">calculadora multibases</a> para conferir seus cálculos.</i>--></p>
+                    <p class="topic">1. Deve-se “armar” a conta, alinhando as parcelas a serem somadas. Unidade, acima de unidade, dezena acima de dezena e assim por diante.</p>
+                    <p class="topic">2. A soma de cada parcela é feita da direita para a esquerda.</p>
+                    <img src="/assets/images/img_3_exdec.png" alt="soma 28+4" height="220px" width="440px">
+                    <p class="topic">3. O importante, e que varia dependendo da base, é justamente esta soma. Ao somar 8 e 4, o sistema decimal não possui algarismos suficientes para representar o resultado. <br/>
+                    (Já no sistema hexadecimal, por exemplo, teríamos o B. 9+3 = 12<sub>10</sub>, 12<sub>10</sub> = B<sub>16</sub>)</p>
+                    <!--Card explicativo para menos e mais significativo com hiperlink-->
+                    <p class="topic">4. Portanto, ao atingir o maior algarismo do sistema numérico, que no sistema decimal é o 9, deve-se “reiniciar” a contagem no menos significativo indo para 0, e continuar a contagem a partir dele.</p>
+                    <img src="/assets/images/img_3_exdec2.png" alt="foto exemplificando o reinicio da contagem a partir do último algarismo." height="240px" width="430px">
+                    <p class="topic">5. Feito isto, deve ser adicionado 1 ao mais significativo logo a direita, tal como é feito em uma soma comum.</p>
+                    <img src="/assets/images/img_3_exdec3.png" alt="foto exemplificando a soma completa. Com 1 sendo adicionado ao mais significativo" height="230px" width="440px">
+                    <p>Estas operações podem se repetir para todas as parcelas da soma e ser executadas da mesma maneira para todas as bases numéricas.</p>
+                    <p>Vejamos alguns exemplos:</p>
+                    <img src="/assets/images/img_3_exoct.png" alt="exemplo de soma em octal" height="230px" width="450px">
+                    <img src="/assets/images/img_3_exhex.png" alt="exemplo de soma em hexadecimal" height="210" width="450px">
+                    <img src="/assets/images/img_3_exbin.png" alt="exemplo de soma em binário" height="210" width="450">
+                    <h2>Subtração:</h2>
+                    <p><span style="padding-left: 3em">Ao executar a operação de subtração, o método utilizado que também já é conhecido desde o ensino fundamental, é simples e útil para todos os outros sistemas de numeração além do decimal. Vejamos primeiro casos simples, onde a diferença entre os números é pequena:</p>
+                    <p>Basta observar que as unidades são subtraídas normalmente, de maneira independente do sistema numérico em questão.</p>
+                    <img src="/assets/images/img_4_simples1.png" alt="exemplo subtração" width="130px" height="150px">
+                    <img src="/assets/images/img_4_simples2.png" alt="exemplo subtração" width="120px" height="150px">
+                    <img src="/assets/images/img_4_simples3.png" alt="exemplo subtração" width="120px" height="150px">
+                    <p><span style="padding-left: 3em"> Na operação subtração, por vezes, nos deparamos com o fato de alguma(s) da(s) parcelas do subtraendo ser menor que a do minuendo. Com isso, torna-se necessário “pedir emprestado” ao algarismo mais significativo ao lado.<br/>Com um exemplo, recaptularemos primeiro como se dá este processo no sistema decimal:</p>
+                    <p>Demonstraremos o funcionamento uma simples subtração 31-9=21. E a partir disso, entender como esta funciona para os demais sistemas numéricos.<br/></p>
+                    <img src="/assets/images/img_4_ens1.png" alt="foto com exemplificações e indicações de onde é o minuendo Subtrator e diferença" width="260px" height="200px"> 
+                    <p class="topic">1. Nota-se que, na parcela das unidades, o Subtraendo é maior que o Minuendo. O que acaba sendo um empecilho para executar a operação.<br/>Dessa forma, retira-se uma dezena para transferir para as unidades.</p>
+                    <img src="/assets/images/img_4_ens2.png" alt="subtração, transferindo uma dezena para as unidades" width="180px" height="200px">
+                    <p class="topic">2. Ao retirar 1 das dezenas, transferimos 10 unidades e somamos com as unidades existentes no minuendo. Isso se deve ao fato de, no sistema decimal, uma dezena ser composta por 10 unidades, uma centena ser composta por 10 dezenas e assim por diante.</p>
+                    <img src="/assets/images/img_4_ens3.png" alt="subtração, transferindo uma dezena para as unidades" width="180px" height="200px">
+                    <p class="topic">3. Então, de maneira simples, temos que: <i>Ao "pedir emprestado" deve-se retirar um do mais significativo e adicionar 10 (porque estamos no sistema decimal) ao menos significativo.</i><br/>Feito isto, o resultado é extraído normalmente, como nos casos mais simples.</p>
+                    <img src="/assets/images/img_4_ens4.png" alt="finalizando a subtração normalmente como em casos simples" width="180px" height="200px">
+                    <p>Para consolidar o entendimento, vejamos o funcionamento deste processo em outras bases numéricas. Nisso, nos deparamos com duas maneiras diferentes, porém parecidas de fazê-lo. Veremos ambas.</p>
+                    <p>Como exemplo, o sistema octal, <b>método 1:</b><br/>Este método segue exatamente o que é feito no método descrito acima, vejamos:</p>
+                    <p class="topic">1. Observa-se que, na parcela menos significativa da subtração, o Subtraendo é maior que Minuendo. Desta forma, é necessário "pedir emprestado" do mais significativo para seguir com a subtração.</p>
+                    <img src="/assets/images/img_4_oct1.png" alt="subtração em octal, método 1" width="160px" height="210px">
+                    <p class="topic">2. Relembrando o que foi dito alguns tópicos atrás: "Ao retirar 1 das dezenas, transferimos 10 unidades e somamos com as unidades existentes no minuendo."<br/>Neste caso, deve-se adicionar 8 unidades ao menos significativo, uma vez que a operação é feita no sistema octal. Transferindo assim, 1 "octeto"(8, que é representado por 10 no sistema octal) para as unidades.</p>
+                    <img src="/assets/images/img_4_oct2.png" alt="transferindo um octeto para as unidades" width="160px" height="210px">
+                    <p class="topic">3. É importante lembrar que, uma vez que o sistema octal vai de 0 a 7, a operação de soma 10+2=12 e de subtração 6-10, no sistema octal, resulta em 4.</p>
+                    <img src="/assets/images/img_4_oct3.png" alt="somando 10+2 e subtraindo 12-6, resultando em 4" width="160px" height="210px">
+                    <p class="topic">4. Feito isto, a operação pode ser concluída normalmente. (10-6=4; 3-1=2 e, finalmente, temos que: 42-16=24)</p>
+                    <img src="/assets/images/img_4_oct4.png" alt="finalizando a subtração" width="170px" height="200px">
+                    <p>Utilizando o mesmo exemplo, <b>método 2:</b>Neste método, algumas das operações internas para chegar ao resultado final utilizam o sistema decimal para facilitar a compreensão.</p>
+                    <p class="topic">1. Iniciando da mesma maneira, nota-se que o subtraendo é maior que o minuendo (nas unidades), e deve-se fazer o processo de "pedir emprestado".</p>
+                    <img src="/assets/images/img_5_oct1.png" alt="subtração em octal, método 1" width="160px" height="210px">
+                    <p class="topic">2. Da mesma maneira, transferiremos um "octeto" para as unidades, mas ao invés de representá-lo por 10<sub>8</sub>, o "octeto" será representado pelo valor no sistema decimal, ou seja, 8<sub>10</sub>. Sendo assim, também serão transferidas 8 unidades para o menos significativo.</p>
+                    <img src="/assets/images/img_5_oct2.png" alt="transferindo um octeto para as unidades" width="180px" height="210px">
+                    <p class="topic">3. Feito isto, serão somados 8 e 2 (no sistema decimal), obtendo 10<sub>10</sub>. </p>
+                    <img src="/assets/images/img_5_oct3.png" alt="finalizando subtração" width="160px" height="210px">
+                    <p class="topic">4. Desta maneira, a subtração pode ser finalizada normalmente. Atentando-se ao fato de que as somas(como visto no tópico 3, acima) e as subtrações(como vistas logo abaixo 10-6=4) são feitas no sistema decimal.</p>
+                    <img src="/assets/images/img_5_oct4.png" alt="finalizando subtração" width="180px" height="220px">
+                    <p>Para este método de subtração os vídeos podem auxiliar no entendimento.</p>
+                    <h2>Exercícios de Fixação</h2>
+                    <p>Efetue a soma 25 + 40, considerando que estes números estão em base octal e o resultado deve estar em decimal:</p>
+                    <input type="number" id="q3" class="contentQuestion">
+                    <input type="button" onclick="analyseQuestion(3)" value="Corrigir" class="contentButton">
+                    <p style="display: none;" id="textq3"></p>
+                    <p><a id="conversoes"></a><br/></p>
+                    <p><br/><br/><br/><br/><br/></p>
+                </div>
+            </div>
+        </div>
+        <div id="box-3" class="box">
+            <div id="titulo"><h2>Vídeos Recomendados  </h2></div>
+            <div id="videos">
+                <a href="https://www.youtube.com/watch?v=sbKAYKA5J1A" target="_blank">
+                    <div class="thumb-box">
+                        <div class="tholder">
+                            <div class="thumbnail">
+                                <img src="https://img.youtube.com/vi/sbKAYKA5J1A/0.jpg">
+                            </div>
+                        </div>
+                        <h3>Arquitetura de Computadores: Subtração em Binário</h3>
+                        <h4>Professor Pantoja</h4>
+                    </div>
+                </a>
+                <hr>
+                <a href="https://www.youtube.com/watch?v=P47DTzOcbvo" target="_blank">
+                    <div class="thumb-box">
+                        <div class="tholder"><div class="thumbnail"><img src="https://img.youtube.com/vi/P47DTzOcbvo/0.jpg"></div></div>
+                        <h3>Arquitetura de Computadores: Subtração em Octal</h3>
+                        <h4>Professor Pantoja</h4>
+                    </div>
+                </a>
+                <hr>
+                <a href="https://www.youtube.com/watch?v=gHRHll3rHoU" target="_blank">
+                    <div class="thumb-box">
+                        <div class="tholder"><div class="thumbnail"><img src="https://img.youtube.com/vi/gHRHll3rHoU/0.jpg"></div></div>
+                        <h3>Arquitetura de Computadores: Subtração em Hexadecimal</h3>
+                        <h4>Professor Pantoja</h4>
+                    </div>
+                </a>
+                <hr>
+                <a href="https://www.youtube.com/watch?v=czrxHe6nQBg" target="_blank">
+                    <div class="thumb-box">
+                        <div class="tholder"><div class="thumbnail"><img src="https://img.youtube.com/vi/czrxHe6nQBg/0.jpg"></div></div>
+                        <h3>Arquitetura de Computadores: Adição em Binário</h3>
+                        <h4>Professor Pantoja</h4>
+                    </div>
+                </a>
+                <hr>
+                <a href="https://www.youtube.com/watch?v=pGxKo4vcRjo" target="_blank">
+                    <div class="thumb-box">
+                        <div class="tholder"><div class="thumbnail"><img src="https://img.youtube.com/vi/pGxKo4vcRjo/0.jpg"></div></div>
+                        <h3>Arquitetura de Computadores: Adição em Octal</h3>
+                        <h4>Professor Pantoja</h4>
+                    </div>
+                </a>
+                <hr>
+                <a href="https://www.youtube.com/watch?v=-B0k0oB5NrU" target="_blank">
+                    <div class="thumb-box">
+                        <div class="tholder"><div class="thumbnail"><img src="https://img.youtube.com/vi/-B0k0oB5NrU/0.jpg"></div></div>
+                        <h3>Arquitetura de Computadores: Adição em Hexadecimal</h3>
+                        <h4>Professor Pantoja</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="progress-bar" id="myBar"></div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>

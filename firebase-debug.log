@@ -1,0 +1,26 @@
+[debug] [2020-05-07T01:58:36.852Z] ----------------------------------------------------------------------
+[debug] [2020-05-07T01:58:36.855Z] Command:       /home/gabriel/.nvm/versions/node/v10.19.0/bin/node /home/gabriel/.nvm/versions/node/v10.19.0/bin/firebase serve
+[debug] [2020-05-07T01:58:36.856Z] CLI Version:   8.1.1
+[debug] [2020-05-07T01:58:36.856Z] Platform:      linux
+[debug] [2020-05-07T01:58:36.856Z] Node Version:  v10.19.0
+[debug] [2020-05-07T01:58:36.856Z] Time:          Wed May 06 2020 22:58:36 GMT-0300 (Brasilia Standard Time)
+[debug] [2020-05-07T01:58:36.856Z] ----------------------------------------------------------------------
+[debug] [2020-05-07T01:58:36.856Z] 
+[debug] [2020-05-07T01:58:36.871Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-07T01:58:36.871Z] > authorizing via signed-in user
+[debug] [2020-05-07T01:58:36.872Z] [iam] checking project pibic-5e335 for permissions ["firebase.projects.get"]
+[debug] [2020-05-07T01:58:36.876Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pibic-5e335:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-07T01:58:38.005Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 07 May 2020 01:58:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=741","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-07T01:58:38.007Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pibic-5e335  
+ 
+[debug] [2020-05-07T01:58:38.560Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 07 May 2020 01:58:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/home/gabriel/Desktop/PIBIC/Projeto'...
+[info] 
+[debug] [2020-05-07T01:58:38.563Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pibic-5e335/webApps/-/config  
+ 
+[debug] [2020-05-07T01:58:40.018Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 07 May 2020 01:58:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5005

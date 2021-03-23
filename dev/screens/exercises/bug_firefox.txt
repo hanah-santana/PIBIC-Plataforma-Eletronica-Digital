@@ -1,0 +1,4 @@
+Devido a problemas com o browser Firefox,
+os scripts de exercícios, apesar de serem
+quase iguais, tiveram que ficar em arquivos
+separados.

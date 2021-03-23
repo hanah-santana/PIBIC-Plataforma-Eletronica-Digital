@@ -1,0 +1,56 @@
+#box-1{
+    width: 17%;
+    min-height: 223px;
+    max-height: fit-content;
+    top: 60px;
+    left: 16px;
+    background-color: #ffffff;
+    position: sticky;
+}
+
+li {
+    margin-bottom: 5px;
+}
+#box-1 h2{
+    margin:16px;
+}
+#box-1 ul{
+    list-style: none;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+#box-1 ul ul{
+    font-size: 14px;
+}
+#box-1 a{
+    margin-left: 0.8em;
+}
+#box-1 a:hover{
+    color: #039487;
+    text-decoration: underline;
+    text-decoration-color: #039487;
+}
+#vertical{
+    width:8px;
+    height: 100%;
+    background-image: linear-gradient(#4dddd1,#039487);
+    position: absolute;
+}
+        /*REDIMENSIONAMENTO-MOBILE*/
+@media(max-width:850px){ 
+    #box-1{
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    #box-1 ul{
+        width: fit-content;
+        margin-right: -40px;
+    }
+    #vertical{
+        visibility: hidden;
+    }
+}

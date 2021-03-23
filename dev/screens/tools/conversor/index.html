@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de bases</title>
+    <link rel="stylesheet" type="text/css" href="/styles/globalStyles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="/scripts/globalFunctions.js"></script>
+    <script type="module" src="/components/navegador.js"></script>
+    <script src="https://unpkg.com/@webcomponents/custom-elements"></script>
+</head>
+
+<body>
+    <div class="popUpBackground" name="pop" style="display: none;">
+        <div class="popUpBox" name="pop" >
+            <input type="button" class="fechar" id="fechar" onclick="toggleHelp('none')" value ="x"/>
+            <p id="popUpText"> </p>
+        </div>
+    </div>
+    <header>
+        <nav-bar></nav-bar>
+    </header>
+    <div class="main">
+        <input type="button" class="help" id='help' onclick="toggleHelp('block', 'Apenas digite o valor que quer converter juntamente com a base atual dele. Os resultados serão mostrados automaticamente nos espaços ao lado direito de acordo com as bases mais convencionais ou, no último campo, você pode personalizar uma base. As bases não podem ser menores que 2 ou maiores que 36. Lembre-se que, a depender da base, alguns algarismos não poderão ser digitados (ex.: Na base 2, apenas é permitido digitar 0 ou 1).')" value ="Como funciona?"/>
+        <div>
+            <p id="alert1" class="alert"></p>
+            <p id="alert2" class="alert"></p>
+        </div>
+        <div id="row">
+            <div class="entrada">
+                <p id="textNum">Número</p>
+                <input type="text" id="input" oninput="handleChange(this)" maxlength="12">
+                <div id="bases">
+                    <p class="textBase"> na Base: </p>
+                    <input type="number" id="inputBase" class="inputBase"
+                    oninput="handleChange(this)" 
+                    placeholder="10">
+                </div>
+            </div>
+            <div id="resultados">
+                <div class="bases">
+                    <p class="textBase">Base 02: </p>
+                    <input type="text" id="base2" readonly="true" class="result">
+                </div>
+                <div class="bases">
+                    <p class="textBase">Base 08: </p>
+                    <input type="text" id="base8" readonly="true" class="result">
+                </div>
+                <div class="bases">
+                    <p class="textBase">Base 10: </p>
+                    <input type="text" id="base10" readonly="true" class="result">
+                </div>
+                <div class="bases">
+                    <p class="textBase">Base 16: </p>
+                    <input type="text" id="base16" readonly="true" class="result">
+                </div>
+                <div class="bases">
+                    <p class="textBase">Base: </p>
+                    <input type="number" id="baseX" class="inputBase"
+                    oninput="handleChange(this)"
+                    placeholder="10">
+                    <input type="text" id="numBaseX" readonly="true" class="result" >
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

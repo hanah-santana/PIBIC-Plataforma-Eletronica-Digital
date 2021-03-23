@@ -1,0 +1,30 @@
+#box-3{
+    margin: 16px;
+    width: 18%;
+    height: fit-content;
+    background-color: white;
+}
+#box-3 hr{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 32px;
+    margin-right: 32px;
+    border: 0;
+    border-top: 1px solid #aaaaaa;
+}
+.display{
+    margin: 16px;
+    width: 88%;
+    position: relative;
+}
+        /*REDIMENSIONAMENTO-MOBILE*/
+@media(max-width:850px){ 
+    #box-3{
+        width: 100%;
+        margin-left: 0;
+        overflow: auto; 
+    }
+    .display{
+        width:95%;
+    }
+}
